@@ -15,6 +15,11 @@ export function Cart({ isOpen }: CartProps) {
                 <Offcanvas.Title>Cart</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
+                <Stack gap={3}>
+                    {cartItems.map(item => 
+                        <CartItem key={item.id} {...item} />
+                    )}
+                </Stack>
             </Offcanvas.Body>
         </Offcanvas>)
 }
