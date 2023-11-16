@@ -1,8 +1,10 @@
 import { Col, Row } from "react-bootstrap"
-import items from "../data/items.json"
 import { Item } from "../components/Item"
+import { useFetchData } from "../hooks/useFetchData"
 
 export function Store() {
+    const items  = useFetchData()
+    
     return (
         <>
             <h1>Store</h1>

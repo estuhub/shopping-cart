@@ -32,5 +32,6 @@ export function Cart({ isOpen }: CartProps) {
                     </div>
                 </Stack>
             </Offcanvas.Body>
-        </Offcanvas>)
+        </Offcanvas>
+    )
 }
