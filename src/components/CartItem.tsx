@@ -29,7 +29,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
             <div className="me-auto">
                 {/* item name and qty */}
                 <div>
-                    {item.name}{" "}
+                    {item.title}{" "}
                     {quantity > 1 && <span className="text-muted" style={{ fontSize: "0.75em" }}>x{quantity}</span>}
                 </div>
                 {/* item price */}
