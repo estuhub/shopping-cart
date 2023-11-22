@@ -1,6 +1,7 @@
 import {Button, Container, Nav, Navbar as NavbarBs} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
 
 export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart()
@@ -19,7 +20,7 @@ export function Navbar() {
                         style={{ width: "3rem", height: "3rem", position: "relative"}}
                         onClick={openCart}
                         >
-                        C
+                        <PiShoppingCartSimpleBold style={{width: "24px", height: "24px"}} />
                         <div 
                             className="rounded-circle bg-danger d-flex justify-content-center align-items-center" 
                             style={{
